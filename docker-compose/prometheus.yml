@@ -38,7 +38,7 @@ scrape_configs:
     scrape_interval: 15s # 수집할 주기
     static_configs:
       - targets: # 수집할 서버의 IP, PORT
-          - "orderservice:8082"
+          - "gopangorders:8082"
   - job_name: "payment" # 수집하는 이름
     metrics_path: "/actuator/prometheus" # 수집한 경로
     scrape_interval: 15s # 수집할 주기

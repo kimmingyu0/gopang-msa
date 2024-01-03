@@ -102,7 +102,7 @@ services:
         aliases:
           - "eurekaserver"
 
-  orderservice:
+  gopangorders:
     image: gopang/orderserver:0.0.2-SNAPSHOT
     environment:
       DATABASESERVER_PORT: "3306"
